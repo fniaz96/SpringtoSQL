@@ -55,8 +55,8 @@ public class OrdersController {
         return "order booked for  " + someorder.getCustomer();
     }
 
-    @GetMapping("/getTickets")  //U wanna get the whole list/table
-    public List<Order> getTickets() {
+    @GetMapping("/getOrders")  //U wanna get the whole list/table
+    public List<Order> getOrders() {
         return (List<Order>) dataccess.findAll();
     }
 }
